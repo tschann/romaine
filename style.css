@@ -23,7 +23,7 @@ body {
 
     display: flex;
     place-content: center;
-    max-width: clamp(30rem, 95%, 66rem);
+    max-width: 91%;
     width: max(22.5rem, 100%);
     min-height: 100vh;
     margin-inline: auto;
@@ -44,8 +44,9 @@ body {
 
 figure {
     display: flex;
-    min-width: 16rem;
-    max-height: 18rem;
+    min-width: 23rem;
+    max-height: 25rem;
+    margin: 0rem;
     position: relative;
     border-radius: .35rem;
    /* box-shadow:
@@ -63,9 +64,9 @@ figure::before {
     background:linear-gradient(
         to top,
         hsla(100, 100%, 100%, 0.9) 0%,
-        hsla(100, 100%, 100%, 0.7) 12%,
-        hsla(100, 100%, 100%, 0.2) 41.6%,
-        hsla(100, 100%, 100%, 0.15) 50%,
+        hsla(100, 100%, 100%, 0.7) 2%,
+        hsla(100, 100%, 100%, 0.2) 11.6%,
+        hsla(100, 100%, 100%, 0.15) 30%,
         hsla(100, 100%, 100%, 0.01) 59.9%,
         hsla(100, 100%, 100%, 0) 100%
     );
@@ -110,11 +111,10 @@ figure:hover .header__caption {
     opacity: 1;
 }
 figure:hover img{
-    transform: scale(1);
+    transform: scale(1.13);
 }
 .title {
     color: #000;
-    
 }
 
 .title--primary {
@@ -130,10 +130,10 @@ figure:hover img{
 img {
     display: block;
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
     height: 100%;
-  transform: scale(1.15);
-    aspect-ratio: 16 / 13;
+    transform: scale(1);
+  /*  aspect-ratio: 16 / 13; */
     transition: 400ms ease-in-out;
 }
